@@ -17,6 +17,10 @@ The latest stable version can always be found on
 
 ## Installing MockBukkit
 
+If you are new to Maven or Gradle, visit either the [Maven Install Guide](https://maven.apache.org/install.html) or
+the [Gradle installation guide](https://docs.gradle.org/current/userguide/installation.html)
+to set up your build tool
+
 MockBukkit is available on Maven Central, so you can use the following dependency
 in your build tool of choice:
 
@@ -35,13 +39,13 @@ in your build tool of choice:
 
 ```groovy [Gradle]
 dependencies {
-  testImplementation 'org.mockbukkit.mockbukkit:MockBukkit-v1.21:4.0.0'
+    testImplementation 'org.mockbukkit.mockbukkit:MockBukkit-v1.21:4.0.0'
 }
 ```
 
 ```kotlin [Gradle Kotlin DSL]
 dependencies {
-  testImplementation("org.mockbukkit.mockbukkit:MockBukkit-v1.21:4.0.0")
+    testImplementation("org.mockbukkit.mockbukkit:MockBukkit-v1.21:4.0.0")
 }
 ```
 :::
@@ -65,4 +69,8 @@ gradle test
 
 :::
 
-If you are using a different test runner, you will need to configure it to use MockBukkit.
+If you are using a different test runner,
+you will need to configure it to use MockBukkit.
+While other test runners like [TestNG](https://testng.org/) exist,
+Mockbukkit has not verified compatibility with them. This does not mean that
+Mockbukkit will not work with them, but it is not tested.

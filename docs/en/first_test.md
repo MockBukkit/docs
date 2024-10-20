@@ -17,12 +17,14 @@ Create a new class called `HelloWorldTest.java` in the `src/test/java` directory
 Its common practice to name test classes with the `Test` suffix,
 so `HelloWorldTest` is a good name if you are writing a test 
 for the `HelloWorld` class. The name doesn't matter, but it's a good convention.
+The `Test` suffix helps identify test classes easily, and it's recognized by most build tools and testing frameworks
+for running tests automatically.
 :::
 
 ::: warning
 You're class can't be `final`. This is because MockBukkit uses reflection to
-modify the behavior of the class under test. If you use Kotlin, you need to
-declare your class as `open`.
+modify the behavior of the class under test.  In Kotlin, classes are `final` by default,
+so you must declare them as `open` for MockBukkit to function properly.
 :::
 
 Here's an example of a test class

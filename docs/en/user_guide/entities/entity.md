@@ -3,11 +3,14 @@ outline: deep
 title: Entities
 ---
 
-# {{ $frontmatter.title }}
+# Entities
 
 In Spigot and all derivative forks, `Entity` is the parent class of all animals,
 mobs and several more things. Therefore it's a common abstraction used in a lot of code.
 We added several Methods to our `EntityMock` implementation that will make testing much easier.
+
+As Entity also implements [MessageTarget](message_target.md), you can also use the methods provided there
+
 
 ## Asserting Location
 

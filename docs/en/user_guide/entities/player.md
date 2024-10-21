@@ -3,7 +3,7 @@ outline: deep
 title: Player
 ---
 
-# {{ $frontmatter.title }}
+# Player
 
 The `Player` class is the main class for interacting with players in MockBukkit. We provide a mock for it
 in form of the `PlayerMock`.
@@ -124,7 +124,7 @@ val player = server.addPlayer()
 
 :::
 
-As `PlayerMock` extends the `EntityMock` class, the methods referenced int [Entities](/docs/en/entities/entity.md) also apply.
+As `PlayerMock` extends the `EntityMock` class, the methods referenced int [Entities](entity.md) also apply.
 
 This section isn't an exhaustive list of Methods we have added, please refer to the
 [Javadocs](https://javadoc.io/doc/com.github.seeseemelk/MockBukkit-v1.21) for more information.

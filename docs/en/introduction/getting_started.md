@@ -1,8 +1,9 @@
 ---
 outline: deep
+title: Getting Started
 ---
 
-# Getting Started
+# {{ $frontmatter.title }}
 
 In order to use MockBukkit, you first have to integrate it into your build tool.
 You will also need to know which version of MockBukkit to use.

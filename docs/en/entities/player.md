@@ -1,8 +1,9 @@
 ---
 outline: deep
+title: Player
 ---
 
-# Player
+# {{ $frontmatter.title }}
 
 The `Player` class is the main class for interacting with players in MockBukkit. We provide a mock for it
 in form of the `PlayerMock`.

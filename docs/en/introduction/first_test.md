@@ -1,8 +1,9 @@
 ---
 outline: deep
+title: Writing your first test
 ---
 
-# Writing your first test
+# {{ $frontmatter.title }}
 
 This page will guide you through the process of writing your first test.
 

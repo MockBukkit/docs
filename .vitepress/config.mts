@@ -28,7 +28,7 @@ export default defineConfig({
                     items: [
                         {text: 'Getting Started', link: 'docs/en/user_guide/introduction/getting_started'},
                         {text: 'Writing your first test', link: 'docs/en/user_guide/introduction/first_test'},
-                        {text: 'Create a World Mock',link: 'docs/en/user_guide/introduction/mock_world.md'},
+                        {text: 'Create a World Mock', link: 'docs/en/user_guide/introduction/mock_world.md'},
                     ]
                 },
                 {
@@ -49,6 +49,25 @@ export default defineConfig({
                         {text: 'Events', link: 'docs/en/user_guide/advanced/events'},
                         {text: 'Custom ServerMock', link: 'docs/en/user_guide/advanced/custom_server_mock'},
                         {text: 'Adventure', link: 'docs/en/user_guide/advanced/adventure'}
+                    ]
+                },
+                {
+                    text: "Migrations",
+                    collapsed: false,
+                    items: [
+                        {
+                            text: "3.x to - 4.x Migration",
+                            items: [
+                                {
+                                    text: "Manual Migration",
+                                    link: "docs/en/user_guide/migration/migrate_mockbukkit_4.0_manual"
+                                },
+                                {
+                                    text: "Migration with OpenRewrite",
+                                    link: "docs/en/user_guide/migration/migrate_mockbukkit_4.0_openrewrite"
+                                }
+                            ]
+                        }
                     ]
                 }
             ],

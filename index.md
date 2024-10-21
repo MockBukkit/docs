@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: Getting Started
-      link: docs/en/getting_started
+      link: docs/en/introduction/getting_started
     - theme: alt
       text: Github
       link: https://github.com/Mockbukkit/Mockbukkit

@@ -11,14 +11,25 @@ export default defineConfig({
             {text: 'Getting Started', link: 'docs/en/getting_started'},
         ],
         logo: '/images/mockbukkit_logo.png',
-
+        editLink: {
+            pattern: "https://github.com/MockBukkit/docs/tree/main/:path",
+            text: "Edit this page on Github!"
+        },
         sidebar: [
             {
                 text: 'Introduction',
                 collapsed: false,
                 items: [
-                    {text: 'Getting Started', link: 'docs/en/getting_started'},
-                    {text: 'Writing your first test', link: 'docs/en/first_test'},
+                    {text: 'Getting Started', link: 'docs/en/introduction/getting_started'},
+                    {text: 'Writing your first test', link: 'docs/en/introduction/first_test'},
+                ]
+            },
+            {
+                text: "Entities",
+                collapsed: false,
+                items: [
+                    {text: 'Entities', link: 'docs/en/entities/entity'},
+                    {text: 'Player', link: 'docs/en/entities/player'}
                 ]
             }
         ],

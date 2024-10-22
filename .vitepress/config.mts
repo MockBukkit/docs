@@ -1,4 +1,4 @@
-import {defineConfig} from 'vitepress'
+import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -7,9 +7,9 @@ export default defineConfig({
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         nav: [
-            {text: 'Home', link: '/'},
-            {text: 'Getting Started', link: 'docs/en/user_guide/introduction/getting_started'},
-            {text: 'Contribution Guides', link: 'docs/en/contribution/maintainers/pr_guide'},
+            { text: 'Home', link: '/' },
+            { text: 'Getting Started', link: 'docs/en/user_guide/introduction/getting_started' },
+            { text: 'Contribution Guides', link: 'docs/en/contribution/maintainers/pr_guide' },
         ],
         logo: '/images/mockbukkit_logo.png',
         editLink: {
@@ -26,18 +26,18 @@ export default defineConfig({
                     text: 'Introduction',
                     collapsed: false,
                     items: [
-                        {text: 'Getting Started', link: 'docs/en/user_guide/introduction/getting_started'},
-                        {text: 'Writing your first test', link: 'docs/en/user_guide/introduction/first_test'},
-                        {text: 'Create a World Mock', link: 'docs/en/user_guide/introduction/mock_world.md'},
+                        { text: 'Getting Started', link: 'docs/en/user_guide/introduction/getting_started' },
+                        { text: 'Writing your first test', link: 'docs/en/user_guide/introduction/first_test' },
+                        { text: 'Create a World Mock', link: 'docs/en/user_guide/introduction/mock_world.md' },
                     ]
                 },
                 {
                     text: "Entities",
                     collapsed: false,
                     items: [
-                        {text: 'Entities', link: 'docs/en/user_guide/entities/entity'},
-                        {text: 'Player', link: 'docs/en/user_guide/entities/player'},
-                        {text: 'MessageTarget', link: 'docs/en/user_guide/entities/message_target'},
+                        { text: 'Entities', link: 'docs/en/user_guide/entities/entity' },
+                        { text: 'Player', link: 'docs/en/user_guide/entities/player' },
+                        { text: 'MessageTarget', link: 'docs/en/user_guide/entities/message_target' },
                     ]
                 },
 
@@ -45,10 +45,10 @@ export default defineConfig({
                     text: "Advanced Topics",
                     collapsed: false,
                     items: [
-                        {text: 'Scheduler', link: 'docs/en/user_guide/advanced/scheduler'},
-                        {text: 'Events', link: 'docs/en/user_guide/advanced/events'},
-                        {text: 'Custom ServerMock', link: 'docs/en/user_guide/advanced/custom_server_mock'},
-                        {text: 'Adventure', link: 'docs/en/user_guide/advanced/adventure'}
+                        { text: 'Scheduler', link: 'docs/en/user_guide/advanced/scheduler' },
+                        { text: 'Events', link: 'docs/en/user_guide/advanced/events' },
+                        { text: 'Custom ServerMock', link: 'docs/en/user_guide/advanced/custom_server_mock' },
+                        { text: 'Adventure', link: 'docs/en/user_guide/advanced/adventure' }
                     ]
                 },
                 {
@@ -57,11 +57,8 @@ export default defineConfig({
                     items: [
                         {
                             text: "3.x to - 4.x Migration",
+                            link: "docs/en/user_guide/migration/migrate_mockbukkit_4.0",
                             items: [
-                                {
-                                    text: "Manual Migration",
-                                    link: "docs/en/user_guide/migration/migrate_mockbukkit_4.0_manual"
-                                },
                                 {
                                     text: "Migration with OpenRewrite",
                                     link: "docs/en/user_guide/migration/migrate_mockbukkit_4.0_openrewrite"
@@ -76,15 +73,15 @@ export default defineConfig({
                     text: "For Maintainers",
                     collapsed: false,
                     items: [
-                        {text: "Maintainer PR Guide", link: 'docs/en/contribution/maintainers/pr_guide'},
+                        { text: "Maintainer PR Guide", link: 'docs/en/contribution/maintainers/pr_guide' },
                     ]
                 }
             ]
         },
 
         socialLinks: [
-            {icon: 'github', link: 'https://github.com/Mockbukkit/Mockbukkit'},
-            {icon: 'discord', link: 'https://discord.gg/Xunsn6D8MB'},
+            { icon: 'github', link: 'https://github.com/Mockbukkit/Mockbukkit' },
+            { icon: 'discord', link: 'https://discord.gg/Xunsn6D8MB' },
         ],
         footer: {
             message: 'Released under the MIT License.',

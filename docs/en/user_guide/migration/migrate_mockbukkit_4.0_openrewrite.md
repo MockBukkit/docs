@@ -1,11 +1,15 @@
 ---
 outline: deep
-title: Migrate to Mockbukkit 4.0 using OpenRewrite
+title: Migrate to Mockbukkit 4.x using OpenRewrite
+next: false
+prev:
+    link: '/docs/en/user_guide/migration/migrate_mockbukkit_4.0'
+    text: 'Migrate to Mockbukkit 4.x'
 ---
 
-# Migrate to Mockbukkit 4.0 using OpenRewrite
+# Migrate to Mockbukkit 4.x using OpenRewrite
 
-Migration to version number 4 was carefully automated by the MockBukkit team using OpenRewrite scripts to
+Migration to version 4.x was carefully automated by the MockBukkit team using OpenRewrite scripts to
 facilitate the migration process.
 
 To run the scripts follow the steps for your package manager:

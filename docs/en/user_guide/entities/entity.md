@@ -1,6 +1,9 @@
 ---
 outline: deep
 title: Entities
+prev:
+    text: 'Creating a Mock World'
+    link: '/docs/en/user_guide/introduction/mock_world'
 next:
     text: 'Player'
     link: '/docs/en/user_guide/entities/player'

@@ -1,6 +1,9 @@
 ---
 outline: deep
 title: Scheduler Mock
+next:
+    text: 'Events'
+    link: '/docs/en/user_guide/advanced/events'
 ---
 
 # Scheduler Mock

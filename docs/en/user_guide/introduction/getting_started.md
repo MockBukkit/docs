@@ -1,6 +1,9 @@
 ---
 outline: deep
 title: Getting Started
+next:
+    text: 'Writing your first test'
+    link: '/docs/en/user_guide/introduction/first_test'
 ---
 
 # Getting Started

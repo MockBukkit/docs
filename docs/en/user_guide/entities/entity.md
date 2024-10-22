@@ -1,6 +1,9 @@
 ---
 outline: deep
 title: Entities
+next:
+    text: 'Player'
+    link: '/docs/en/user_guide/entities/player'
 ---
 
 # Entities

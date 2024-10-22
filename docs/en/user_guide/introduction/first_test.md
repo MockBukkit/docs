@@ -1,6 +1,12 @@
 ---
 outline: deep
 title: Writing your first test
+next:
+    text: 'Creating a Mock World'
+    link: '/docs/en/user_guide/introduction/mock_world'
+prev:
+    text: 'Getting Started'
+    link: '/docs/en/user_guide/introduction/getting_started'
 ---
 
 # Writing your first test

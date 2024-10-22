@@ -1,6 +1,12 @@
 ---
 outline: deep
 title: Events
+prev:
+    text: 'Scheduler'
+    link: '/docs/en/user_guide/advanced/scheduler'
+next:
+    text: 'Custom ServerMock'
+    link: '/docs/en/user_guide/advanced/custom_server_mock'
 ---
 
 # Events

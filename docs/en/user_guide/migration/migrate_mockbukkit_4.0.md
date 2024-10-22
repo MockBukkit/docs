@@ -25,13 +25,16 @@ If you prefer to do the migration manually, we suggest you to execute a _find an
 
 ## Renaming classes
 
-Some classes were renamed to for clearer names.
+Some class names have been renamed for easier interpretation.
 The table below creates a mapping between the class names from version 3 and the version 4.
 
 | v3                                                        | v4                                                              |
 |-----------------------------------------------------------|-----------------------------------------------------------------|
+| be.seeseemelk.mockbukkit.ban.MockIpBanEntry               | org.mockbukkit.mockbukkit.ban.IpbanEntryMock                    |
+| be.seeseemelk.mockbukkit.ban.MockIpBanEList               | org.mockbukkit.mockbukkit.ban.IpbanListMock                     |
 | be.seeseemelk.mockbukkit.block.data.AmethystClusterMock   | org.mockbukkit.mockbukkit.block.data.AmethystClusterDataMock    |
 | be.seeseemelk.mockbukkit.block.data.BedMock               | org.mockbukkit.mockbukkit.block.data.BedDataMock                |
+| be.seeseemelk.mockbukkit.block.data.BambooMock            | org.mockbukkit.mockbukkit.block.data.BambooDataMock             |
 | be.seeseemelk.mockbukkit.block.data.CampfireMock          | org.mockbukkit.mockbukkit.block.data.CampfireDataMock           |
 | be.seeseemelk.mockbukkit.block.data.SlabMock              | org.mockbukkit.mockbukkit.block.data.SlabDataMock               |
 | be.seeseemelk.mockbukkit.block.data.StairsMock            | org.mockbukkit.mockbukkit.block.data.StairsDataMock             |
@@ -74,4 +77,5 @@ The table below creates a mapping between the class names from version 3 and the
 | be.seeseemelk.mockbukkit.command.MockCommandMap           | org.mockbukkit.mockbukkit.command.commandMapMock                |
 | be.seeseemelk.mockbukkit.MockChunkData                    | org.mockbukkit.mockbukkit.ChunkDataMock                         |
 | be.seeseemelk.mockbukkit.MockPlayerList                   | org.mockbukkit.mockbukkit.PlayerListMock                        |
+| be.seeseemelk.mockbukkit.MockPlugin                       | org.mockbukkit.mockbukkit.plugin.PluginMock                     |
 | be.seeseemelk.mockbukkit.MockUnsafeValues                 | org.mockbukkit.mockbukkit.UnsafeValuesMock                      |

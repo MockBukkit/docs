@@ -17,7 +17,7 @@ hero:
       link: https://github.com/Mockbukkit/Mockbukkit
     - theme: alt
       text: 4.0 Migration
-      link: docs/en/user_guide/migration/migrate_mockbukkit_4.0_manual
+      link: docs/en/user_guide/migration/migrate_mockbukkit_4.0
 
 features:
   - icon: 🏆

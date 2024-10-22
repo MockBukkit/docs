@@ -1,17 +1,17 @@
 ---
 outline: deep
-title: Migrate to Mockbukkit 4.x
+title: Migrate to Mockbukkit 4
 next:
-    text: 'OpenRewrite Migration for 4.x'
+    text: 'OpenRewrite Migration for v4'
     link: '/docs/en/user_guide/migration/migrate_mockbukkit_4.0_openrewrite.html'
 
 ---
 
-# Migrate to Mockbukkit 4.x
+# Migrate to Mockbukkit 4
 
 ::: tip
 We have OpenRewrite Recipes for this migration. You can more information
-on the page for the [OpenRewrite Migration for 4.x](migrate_mockbukkit_4.0_openrewrite.md)
+on the page for the [OpenRewrite Migration for 4](migrate_mockbukkit_4.0_openrewrite.md)
 
 :::
 

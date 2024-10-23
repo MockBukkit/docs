@@ -44,7 +44,7 @@ Otherwise, you will need to add OpenRewrite plugin to your project with the corr
             <dependency>
                 <groupId>org.mockbukkit</groupId>
                 <artifactId>rewrite-recipes</artifactId>
-                <version>0.1.0-SNAPSHOT</version>
+                <version>1.0.0</version>
             </dependency>
         </dependencies>
     </plugin>

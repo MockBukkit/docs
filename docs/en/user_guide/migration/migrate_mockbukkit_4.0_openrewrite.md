@@ -11,7 +11,19 @@ prev:
 
 Migration to version 4 was carefully automated by the MockBukkit team using OpenRewrite scripts to facilitate the migration process. To run the scripts, follow the steps for your package manager.
 
-Add OpenRewrite plugin to your project with the correct configuration:
+If you are using Maven, you can do the migration by executing the following command:
+
+::: code-group
+
+```bash [Maven]
+mvn org.openrewrite.maven:rewrite-maven-plugin:run \
+    -Drewrite.recipeArtifactCoordinates=org.mockbukkit:rewrite-recipes:1.0.0 \
+    -Drewrite.activeRecipes=org.mockbukkit.rewrite.PackageRename,org.mockbukkit.rewrite.ClassRename
+```
+
+:::
+
+Otherwise, you will need to add OpenRewrite plugin to your project with the correct configuration:
 
 ::: code-group
 ```xml [Maven]

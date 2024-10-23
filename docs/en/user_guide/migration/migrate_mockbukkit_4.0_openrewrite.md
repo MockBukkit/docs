@@ -11,7 +11,7 @@ prev:
 
 Migration to version 4 was carefully automated by the MockBukkit team using OpenRewrite scripts to facilitate the migration process. To run the scripts, follow the steps for your package manager.
 
-Add OpenRewrite as a dependency to your project
+Add OpenRewrite plugin to your project with the correct configuration:
 
 ::: code-group
 ```xml [Maven]
@@ -73,7 +73,7 @@ rewrite {
 ```
 :::
 
-Run OpenRewrite to refactor your code
+Run OpenRewrite to refactor your code:
 
 ::: code-group
 ```bash [Maven]

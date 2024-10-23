@@ -14,73 +14,58 @@ Migration to version 4 was carefully automated by the MockBukkit team using Open
 Add OpenRewrite as a dependency to your project
 
 ::: code-group
-
 ```xml [Maven]
-<dependency>
-    <groupId>org.openrewrite</groupId>
-    <artifactId>rewrite-maven-plugin</artifactId>
-    <version>5.x.x</version>
-</dependency>
+<plugins>
+    <plugin>
+        <groupId>org.openrewrite.maven</groupId>
+        <artifactId>rewrite-maven-plugin</artifactId>
+        <version>5.42.2</version>
+        <!--Add the recipe source to your project’s rewrite configuration-->
+        <configuration>
+            <activeRecipes>
+                <recipe>org.mockbukkit.rewrite.PackageRename</recipe>
+                <recipe>org.mockbukkit.rewrite.ClassRename</recipe>
+            </activeRecipes>
+        </configuration>
+        <!--Add the Mockbukkit recipes-->
+        <dependencies>
+            <dependency>
+                <groupId>org.mockbukkit</groupId>
+                <artifactId>rewrite-recipes</artifactId>
+                <version>0.1.0-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </plugin>
+    <!-- Other plugins-->
+</plugins>
 ```
-
 ```kotlin [Gradle Kotlin DSL]
 plugins {
     id("org.openrewrite.rewrite") version "6.x.x"
 }
-```
 
-```groovy [Gradle Groovy DSL]
-plugins {
-    id("org.openrewrite.rewrite") version "6.x.x"
-}
-```
-:::
-
-Add the Mockbukkit recipes
-
-::: code-group
-
-```xml [Maven]
-<dependency>
-    <groupId>org.mockbukkit</groupId>
-    <artifactId>rewrite-recipes</artifactId> 
-    <version>1.0.0</version>
-</dependency>
-```
-
-```kotlin [Gradle Kotlin DSL]
 dependencies {
-    implementation("org.mockbukkit:rewrite-recipes:1.0.0") 
+    // Add the Mockbukkit recipes
+    rewrite("org.mockbukkit:rewrite-recipes:1.0.0") 
 }
-```
 
-```groovy [Gradle Groovy DSL]
-dependencies {
-    implementation("org.mockbukkit:rewrite-recipes:1.0.0") 
-}
-```
-:::
-
-Add the recipe source to your project’s rewrite configuration
-::: code-group
-
-```xml [Maven]
-<configuration>
-    <activeRecipes>
-        <recipe>org.mockbukkit.rewrite.PackageRename</recipe>
-        <recipe>org.mockbukkit.rewrite.ClassRename</recipe>
-    </activeRecipes>
-</configuration>
-```
-
-```kotlin [Gradle Kotlin DSL]
+// Add the recipe source to your project’s rewrite configuration
 rewrite {
-    activeRecipe("org.mockbukkit.rewrite.PackageRename")
-    activeRecipe("org.mockbukkit.rewrite.ClassRename")
+   activeRecipe("org.mockbukkit.rewrite.PackageRename")
+   activeRecipe("org.mockbukkit.rewrite.ClassRename")
 }
 ```
+```groovy [Groovy Kotlin DSL]
+plugins {
+    id("org.openrewrite.rewrite") version "6.x.x"
+}
 
-```groovy [Gradle Groovy DSL]
+dependencies {
+    // Add the Mockbukkit recipes
+    rewrite("org.mockbukkit:rewrite-recipes:1.0.0") 
+}
+
+// Add the recipe source to your project’s rewrite configuration
 rewrite {
    activeRecipe("org.mockbukkit.rewrite.PackageRename")
    activeRecipe("org.mockbukkit.rewrite.ClassRename")

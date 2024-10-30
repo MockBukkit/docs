@@ -77,7 +77,7 @@ The table below creates a mapping between the class names from version 3 and the
 | be.seeseemelk.mockbukkit.command.MockCommandMap           | org.mockbukkit.mockbukkit.command.commandMapMock                |
 | be.seeseemelk.mockbukkit.MockPlayerList                   | org.mockbukkit.mockbukkit.PlayerListMock                        |
 | be.seeseemelk.mockbukkit.MockPlugin                       | org.mockbukkit.mockbukkit.plugin.PluginMock                     |
-| be.seeseemelk.mockbukkit.MockUnsafeValues                 | org.mockbukkit.mockbukkit.UnsafeValuesMock                      |
+| be.seeseemelk.mockbukkit.MockUnsafeValues                 | org.mockbukkit.mockbukkit.util.UnsafeValuesMock                 |
 | be.seeseemelk.mockbukkit.GameEventMock                    | org.mockbukkit.mockbukkit.event.GameEventMock                   |
 | be.seeseemelk.mockbukkit.RaidMock                         | org.mockbukkit.mockbukkit.event.RaidMock                        |
 | be.seeseemelk.mockbukkit.PermisisonManagerMock            | org.mockbukkit.mockbukkit.plugin.PermissionManagerMock          |

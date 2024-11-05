@@ -2,27 +2,29 @@
 outline: deep
 title: Entities
 prev:
-    text: 'Creating a Mock World'
-    link: '/docs/en/user_guide/introduction/mock_world'
+  text: "Creating a Mock World"
+  link: "/docs/en/user_guide/introduction/mock_world"
 next:
-    text: 'Player'
-    link: '/docs/en/user_guide/entities/player'
+  text: "Player"
+  link: "/docs/en/user_guide/entities/player"
 ---
 
 # Entities
 
 In Spigot and all derivative forks, `Entity` is the parent class of all animals,
-mobs and several more things. Therefore it's a common abstraction used in a lot of code.
-We added several Methods to our `EntityMock` implementation that will make testing much easier.
+mobs and several more things. Therefore it's a common abstraction used in a lot
+of code. We added several Methods to our `EntityMock` implementation that will
+make testing much easier.
 
-As Entity also implements [MessageTarget](message_target.md), you can also use the methods provided there
-
+As Entity also implements [MessageTarget](message_target.md), you can also use
+the methods provided there
 
 ## Asserting Location
 
-Oftentimes you want to check the Location of an entity. To simply this, 
+Oftentimes you want to check the Location of an entity. To simply this,
 Mockbukkit provides the `EntityMock.assertLocation(Location,double)` method.
-It allows you to check if the entity is within a given range around the specified `Location`
+It allows you to check if the entity is within a given range around the
+specified `Location`
 
 ::: code-group
 
@@ -79,13 +81,12 @@ fun test_assertTeleported() {
 
 :::
 
-If you want to reset the `teleported` flag,
-just call the `EntityMock.clearTeleported()` method
+If you want to reset the `teleported` flag, just call the
+`EntityMock.clearTeleported()` method
 
-In Bukkit, the only way to move a Entity is by teleporting it.
-As this might interfere with tests, we added the `EntityMock.setLocation(location)` method
+In Bukkit, the only way to move a Entity is by teleporting it. As this might
+interfere with tests, we added the`EntityMock.setLocation(location)` method
 to move an entity without changing the teleported flag
-
 
 ## Rename an Entity
 
@@ -102,4 +103,3 @@ entity.setName("new-name")
 ```
 
 :::
-

@@ -2,34 +2,44 @@
 outline: deep
 title: Migrate to Mockbukkit 4
 next:
-    text: 'Migrate to Mockbukkit 4 using OpenRewrite'
-    link: '/docs/en/user_guide/migration/migrate_mockbukkit_4.0_openrewrite.html'
-
+  text: "Migrate to Mockbukkit 4 using OpenRewrite"
+  link: "/docs/en/user_guide/migration/migrate_mockbukkit_4.0_openrewrite.html"
 ---
+
+<!-- markdownlint-configure-file
+{
+    "MD013": false
+}
+-->
 
 # Migrate to Mockbukkit 4
 
 ::: tip
 We have OpenRewrite Recipes for this migration. You can more information
-on the page for the [OpenRewrite Migration for v4](migrate_mockbukkit_4.0_openrewrite.md)
+on the page for
+the [OpenRewrite Migration for v4](migrate_mockbukkit_4.0_openrewrite.md)
 
 :::
 
-The 4.0 release includes a large refactor, where the root package and many classnames have changed.
+The 4.0 release includes a large refactor, where the root package and many
+classnames have changed.
 All features that had previously been marked for removal has now been removed.
 
 ## Renaming packages
 
-Package names were renamed from `be.seeseemelk.mockbukkit` to `org.mockbukkit.mockbukkit`.
-If you prefer to do the migration manually, we suggest you to execute a _find and replace_.
+Package names were renamed from `be.seeseemelk.mockbukkit` to
+`org.mockbukkit.mockbukkit`.
+If you prefer to do the migration manually, we suggest you to execute a _find
+and replace_.
 
 ## Renaming classes
 
 Some class names have been renamed for easier interpretation.
-The table below creates a mapping between the class names from version 3 and the version 4.
+The table below creates a mapping between the class names from version 3 and the
+version 4.
 
 | v3                                                        | v4                                                              |
-|-----------------------------------------------------------|-----------------------------------------------------------------|
+| --------------------------------------------------------- | --------------------------------------------------------------- |
 | be.seeseemelk.mockbukkit.ban.MockIpBanEntry               | org.mockbukkit.mockbukkit.ban.IpbanEntryMock                    |
 | be.seeseemelk.mockbukkit.ban.MockIpBanEList               | org.mockbukkit.mockbukkit.ban.IpbanListMock                     |
 | be.seeseemelk.mockbukkit.block.data.AmethystClusterMock   | org.mockbukkit.mockbukkit.block.data.AmethystClusterDataMock    |

@@ -47,11 +47,12 @@ Before you start contributing, ensure you have the following prerequisites insta
    ```
 
 2. **Update the Documentation**: Make your changes to the documentation. This could include:
-    - Adding new pages
-    - Updating existing content
-    - Fixing typos or grammatical errors
-    - Improving the organization or structure of the documentation
-    - Adding new translations
+
+   - Adding new pages
+   - Updating existing content
+   - Fixing typos or grammatical errors
+   - Improving the organization or structure of the documentation
+   - Adding new translations
 
 3. **Preview Your Changes**: Use the Vitepress development server to preview your changes and ensure they look as expected.
 
@@ -66,7 +67,7 @@ Before you start contributing, ensure you have the following prerequisites insta
 
 ## Submitting a Pull Request
 
-1. **Create a Pull Request**: Go to the original repository on GitHub and create a new pull request, 
+1. **Create a Pull Request**: Go to the original repository on GitHub and create a new pull request,
    comparing your feature branch with the main branch of the original repository.
 
 2. **Describe Your Changes**: In the pull request description,
@@ -84,22 +85,22 @@ Before you start contributing, ensure you have the following prerequisites insta
 
 ### Code blocks
 
-For code blocks where multiple languages can be used, vitepress provides a way to 
+For code blocks where multiple languages can be used, vitepress provides a way to
 specify blocks for multiple languages. Use the following syntax:
 
-```md
-    ::: code-group
-    
-    ```java [Java]
-    // Java code goes here
-    ```
-    
-    ```kotlin [Kotlin]
-    // Kotlin code goes here  
-    ```
-    
-    :::
+````md
+::: code-group
+
+```java [Java]
+// Java code goes here
 ```
+
+```kotlin [Kotlin]
+// Kotlin code goes here
+```
+
+:::
+````
 
 ## Vitepress Markdown Extensions
 

@@ -2,11 +2,11 @@
 outline: deep
 title: Writing your first test
 next:
-    text: 'Creating a Mock World'
-    link: '/docs/en/user_guide/introduction/mock_world'
+  text: "Creating a Mock World"
+  link: "/docs/en/user_guide/introduction/mock_world"
 prev:
-    text: 'Getting Started'
-    link: '/docs/en/user_guide/introduction/getting_started'
+  text: "Getting Started"
+  link: "/docs/en/user_guide/introduction/getting_started"
 ---
 
 # Writing your first test
@@ -22,7 +22,7 @@ Create a new class called `HelloWorldTest.java` in the `src/test/java` directory
 
 ::: tip
 Its common practice to name test classes with the `Test` suffix,
-so `HelloWorldTest` is a good name if you are writing a test 
+so `HelloWorldTest` is a good name if you are writing a test
 for the `HelloWorld` class. The name doesn't matter, but it's a good convention.
 The `Test` suffix helps identify test classes easily, and it's recognized by most build tools and testing frameworks
 for running tests automatically.
@@ -30,7 +30,7 @@ for running tests automatically.
 
 ::: warning
 You're class can't be `final`. This is because MockBukkit uses reflection to
-modify the behavior of the class under test.  In Kotlin, classes are `final` by default,
+modify the behavior of the class under test. In Kotlin, classes are `final` by default,
 so you must declare them as `open` for MockBukkit to function properly.
 :::
 
@@ -106,6 +106,7 @@ the missing functionality. If you are interested in contributing, please
 read the [Contributing Guide](https://github.com/Mockbukkit/Mockbukkit/blob/master/CONTRIBUTING.md).
 
 ### Example
+
 This shows an example with a Method that at the time of writing is not yet implemented.
 
 ::: info
@@ -113,7 +114,7 @@ This shows an example with a Method that at the time of writing is not yet imple
 The method used in this example might be implemented down the road.
 Since most of our effort goes into developing the production code,
 the documentation might become out of date.
-This doesn't diminish this example, just the output might be different. 
+This doesn't diminish this example, just the output might be different.
 
 If you want to contribute a better example to the documentation,
 feel free to open a Pull Request changing this.
@@ -121,6 +122,7 @@ feel free to open a Pull Request changing this.
 :::
 
 #### Plugin Class
+
 ::: code-group
 
 ```java [Java]
@@ -143,7 +145,7 @@ public class DemoPlugin extends JavaPlugin {
 }
 ```
 
-```kotlin [Kotlin] 
+```kotlin [Kotlin]
 package org.mockbukkit.docsdemo
 
 import org.bukkit.plugin.java.JavaPlugin
@@ -234,6 +236,7 @@ class DemoPluginTest {
 }
 
 ```
+
 :::
 
 #### Executing the code
@@ -245,15 +248,18 @@ Executing the test with Gradle, the task will still succeed, since there are onl
 ```
 
 ::: details Output
+
 ```
 BUILD SUCCESSFUL in 522ms
 4 actionable tasks: 4 up-to-date
 ```
+
 :::
 
 With `JUnit`'s `assertThrow()` assertion, we can still get the actual error
 
-::: details Excpetion
+::: details Exception
+
 ```
 Not implemented
 org.mockbukkit.mockbukkit.UnimplementedOperationException: Not implemented

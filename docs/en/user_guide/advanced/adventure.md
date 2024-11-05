@@ -3,8 +3,8 @@ outline: deep
 title: Adventure
 next: false
 prev:
-    text: 'Create a Custom Server Mock'
-    link: '/docs/en/user_guide/advanced/custom_server_mock'
+  text: "Create a Custom Server Mock"
+  link: "/docs/en/user_guide/advanced/custom_server_mock"
 ---
 
 # Adventure

@@ -1,6 +1,6 @@
 # Mockbukkit Docs
 
-This repository is the place where you can find the code for all documentation provided by the 
+This repository is the place where you can find the code for all documentation provided by the
 MockBukkit project. The repository is published under [docs.mockbukkit.org](https://docs.mockbukkit.org).
 
 ## Getting started
@@ -16,23 +16,23 @@ This is how you can get started working on the docs on your local development ma
 
 1. First, clone the repository:
 
-    ```bash
-    git clone https://github.com/MockBukkit/docs.git
-    ```
+   ```bash
+   git clone https://github.com/MockBukkit/docs.git
+   ```
 
 2. Then, install the dependencies:
 
-    ```bash
-    pnpm install
-    ```
+   ```bash
+   pnpm install
+   ```
 
 3. Finally, run the server:
 
-    ```bash
-    pnpm docs:dev // dev server
-    pnpm docs:build // build for production
-    ```
-   
+   ```bash
+   pnpm docs:dev // dev server
+   pnpm docs:build // build for production
+   ```
+
 In the case of building for production, the site will be generated in the `.vitepress/dist` directory.
 
 ### Previewing

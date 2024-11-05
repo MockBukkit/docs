@@ -28,8 +28,8 @@ features:
     details: Unit testing accelerates delivery by reducing the time spent on debugging and error correction.
   - icon: 🔧
     title: Less Manual Testing
-    details: Unit testing decreases the reliance on manual testing by automating the validation of code components. 
+    details: Unit testing decreases the reliance on manual testing by automating the validation of code components.
   - icon: 🧪
     title: Less Regressions
-    details: Unit testing minimizes regression risks by constantly verifying existing functionality. 
+    details: Unit testing minimizes regression risks by constantly verifying existing functionality.
 ---

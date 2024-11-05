@@ -2,11 +2,11 @@
 outline: deep
 title: Create a Custom Server Mock
 prev:
-    text: 'Events'
-    link: '/docs/en/user_guide/advanced/events'
+  text: "Events"
+  link: "/docs/en/user_guide/advanced/events"
 next:
-    text: 'Adventure'
-    link: '/docs/en/user_guide/advanced/adventure'
+  text: "Adventure"
+  link: "/docs/en/user_guide/advanced/adventure"
 ---
 
 # Create a Custom Server Mock

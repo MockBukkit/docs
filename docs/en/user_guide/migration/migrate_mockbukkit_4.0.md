@@ -2,9 +2,8 @@
 outline: deep
 title: Migrate to Mockbukkit 4
 next:
-    text: 'Migrate to Mockbukkit 4 using OpenRewrite'
-    link: '/docs/en/user_guide/migration/migrate_mockbukkit_4.0_openrewrite.html'
-
+  text: "Migrate to Mockbukkit 4 using OpenRewrite"
+  link: "/docs/en/user_guide/migration/migrate_mockbukkit_4.0_openrewrite.html"
 ---
 
 # Migrate to Mockbukkit 4
@@ -29,7 +28,7 @@ Some class names have been renamed for easier interpretation.
 The table below creates a mapping between the class names from version 3 and the version 4.
 
 | v3                                                        | v4                                                              |
-|-----------------------------------------------------------|-----------------------------------------------------------------|
+| --------------------------------------------------------- | --------------------------------------------------------------- |
 | be.seeseemelk.mockbukkit.ban.MockIpBanEntry               | org.mockbukkit.mockbukkit.ban.IpbanEntryMock                    |
 | be.seeseemelk.mockbukkit.ban.MockIpBanEList               | org.mockbukkit.mockbukkit.ban.IpbanListMock                     |
 | be.seeseemelk.mockbukkit.block.data.AmethystClusterMock   | org.mockbukkit.mockbukkit.block.data.AmethystClusterDataMock    |

@@ -2,8 +2,8 @@
 outline: deep
 title: Getting Started
 next:
-    text: 'Writing your first test'
-    link: '/docs/en/user_guide/introduction/first_test'
+  text: "Writing your first test"
+  link: "/docs/en/user_guide/introduction/first_test"
 ---
 
 # Getting Started
@@ -52,6 +52,7 @@ dependencies {
     testImplementation("org.mockbukkit.mockbukkit:MockBukkit-v1.21:4.0.0")
 }
 ```
+
 :::
 
 ## Running MockBukkit

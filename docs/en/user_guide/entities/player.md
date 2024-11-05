@@ -2,11 +2,11 @@
 outline: deep
 title: Player
 prev:
-    text: 'Entities'
-    link: '/docs/en/user_guide/entities/entity'
+  text: "Entities"
+  link: "/docs/en/user_guide/entities/entity"
 next:
-    text: 'MessageTarget'
-    link: '/docs/en/user_guide/entities/message_target'
+  text: "MessageTarget"
+  link: "/docs/en/user_guide/entities/message_target"
 ---
 
 # Player
@@ -39,7 +39,7 @@ val player: PlayerMock = server.addPlayer()
 
 #### `ServerMock.addPlayer(String)`
 
-This method adds a player to the server with the given name. 
+This method adds a player to the server with the given name.
 
 ::: code-group
 
@@ -55,7 +55,7 @@ val player: PlayerMock = server.addPlayer("Player1")
 
 #### `ServerMock.addPlayer(PlayerMock)`
 
-If you want to customize the Player object even further, you can specify 
+If you want to customize the Player object even further, you can specify
 the object you want to be added to the Server by providing a `PlayerMock` instance.
 
 ::: code-group
@@ -63,9 +63,9 @@ the object you want to be added to the Server by providing a `PlayerMock` instan
 ```java
 public PlayerMock getCustomPlayer(){
     PlayerMock playerMock = new PlayerMock(server, "custom_name", UUID.randomUUID());
-    
+
     playerMock.setGameMode(GameMode.CREATIVE);
-    
+
     return playerMock;
 }
 
@@ -108,6 +108,7 @@ server.setPlayers(20);
 val server = Mockbukkit.getMock()
 server.setPlayers(20)
 ```
+
 :::
 
 After this, you can easily reference these Players with the `Server.getPlayer(int)` method
@@ -137,8 +138,8 @@ This section isn't an exhaustive list of Methods we have added, please refer to 
 
 ### Asserting the Gamemode of the player
 
-A common task is checking the Gamemode a player currently is using. We provide a 
-convenience Method to make testing these a little bit easier. The `assertGameMode(Gamemode)` 
+A common task is checking the Gamemode a player currently is using. We provide a
+convenience Method to make testing these a little bit easier. The `assertGameMode(Gamemode)`
 method throws and `AssertionException`,
 which will cause the test to fail if the Gamemode is different from the expected one.
 
@@ -156,7 +157,7 @@ player.assertGameMode(GameMode.SURVIVAL)
 
 ### Simulate player disconnecting
 
-To simulate a Player disconnecting, use the `disconnect()` method. This will set the 
+To simulate a Player disconnecting, use the `disconnect()` method. This will set the
 Player as offline but keeps it as an `OfflinePlayer`.
 
 :::code-group

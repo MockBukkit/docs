@@ -3,8 +3,8 @@ outline: deep
 title: Migrate to Mockbukkit 4 using OpenRewrite
 next: false
 prev:
-    link: '/docs/en/user_guide/migration/migrate_mockbukkit_4.0'
-    text: 'Migrate to Mockbukkit 4'
+  link: "/docs/en/user_guide/migration/migrate_mockbukkit_4.0"
+  text: "Migrate to Mockbukkit 4"
 ---
 
 # Migrate to Mockbukkit 4 using OpenRewrite
@@ -26,6 +26,7 @@ mvn org.openrewrite.maven:rewrite-maven-plugin:run \
 Otherwise, you will need to add OpenRewrite plugin to your project with the correct configuration:
 
 ::: code-group
+
 ```xml [Maven]
 <plugins>
     <plugin>
@@ -51,6 +52,7 @@ Otherwise, you will need to add OpenRewrite plugin to your project with the corr
     <!-- Other plugins-->
 </plugins>
 ```
+
 ```kotlin [Gradle Kotlin DSL]
 plugins {
     id("org.openrewrite.rewrite") version "6.x.x"
@@ -58,7 +60,7 @@ plugins {
 
 dependencies {
     // Add the Mockbukkit recipes
-    rewrite("org.mockbukkit.rewrite:openrewrite-recipes:1.0.2") 
+    rewrite("org.mockbukkit.rewrite:openrewrite-recipes:1.0.2")
 }
 
 // Add the recipe source to your project’s rewrite configuration
@@ -67,6 +69,7 @@ rewrite {
    activeRecipe("org.mockbukkit.rewrite.ClassRename")
 }
 ```
+
 ```groovy [Gradle Groovy DSL]
 plugins {
     id("org.openrewrite.rewrite") version "6.x.x"
@@ -74,7 +77,7 @@ plugins {
 
 dependencies {
     // Add the Mockbukkit recipes
-    rewrite("org.mockbukkit.rewrite:openrewrite-recipes:1.0.2") 
+    rewrite("org.mockbukkit.rewrite:openrewrite-recipes:1.0.2")
 }
 
 // Add the recipe source to your project’s rewrite configuration
@@ -83,15 +86,19 @@ rewrite {
    activeRecipe("org.mockbukkit.rewrite.ClassRename")
 }
 ```
+
 :::
 
 Run OpenRewrite to refactor your code:
 
 ::: code-group
+
 ```bash [Maven]
 mvn rewrite:run
 ```
+
 ```bash [Gradle]
 ./gradlew rewriteRun
 ```
+
 :::

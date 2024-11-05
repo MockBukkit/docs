@@ -2,11 +2,11 @@
 outline: deep
 title: Creating a Mock World
 next:
-    text: 'Entities'
-    link: '/docs/en/user_guide/entities/entity'
+  text: "Entities"
+  link: "/docs/en/user_guide/entities/entity"
 prev:
-    text: 'Writing your first test'
-    link: '/docs/en/user_guide/introduction/first_test'
+  text: "Writing your first test"
+  link: "/docs/en/user_guide/introduction/first_test"
 ---
 
 # Creating a Mock World

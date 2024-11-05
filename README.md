@@ -52,7 +52,9 @@ You can then access the site at <http://localhost:5173>.
 ## Contributing
 
 Contributions are welcome! Please read the
+
 <!-- markdownlint-disable-next-line MD013 -->
+
 [contribution guidelines](https://github.com/MockBukkit/docs/blob/main/CONTRIBUTING.md)
 before submitting a pull request.
 

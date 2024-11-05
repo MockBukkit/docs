@@ -46,4 +46,3 @@ jobs:
           VALIDATE_TYPESCRIPT_STANDARD: false
           VALIDATE_TYPESCRIPT_PRETTIER: false
           VALIDATE_VUE: false
-...

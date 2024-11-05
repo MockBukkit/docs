@@ -67,7 +67,7 @@ rewrite {
    activeRecipe("org.mockbukkit.rewrite.ClassRename")
 }
 ```
-```groovy [Groovy Kotlin DSL]
+```groovy [Gradle Groovy DSL]
 plugins {
     id("org.openrewrite.rewrite") version "6.x.x"
 }

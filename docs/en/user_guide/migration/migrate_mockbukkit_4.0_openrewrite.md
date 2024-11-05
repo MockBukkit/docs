@@ -17,7 +17,7 @@ If you are using Maven, you can do the migration by executing the following comm
 
 ```bash [Maven]
 mvn org.openrewrite.maven:rewrite-maven-plugin:run \
-    -Drewrite.recipeArtifactCoordinates=org.mockbukkit:rewrite-recipes:1.0.0 \
+    -Drewrite.recipeArtifactCoordinates=org.mockbukkit.rewrite:openrewrite-recipes:1.0.2 \
     -Drewrite.activeRecipes=org.mockbukkit.rewrite.PackageRename,org.mockbukkit.rewrite.ClassRename
 ```
 
@@ -42,9 +42,9 @@ Otherwise, you will need to add OpenRewrite plugin to your project with the corr
         <!--Add the Mockbukkit recipes-->
         <dependencies>
             <dependency>
-                <groupId>org.mockbukkit</groupId>
-                <artifactId>rewrite-recipes</artifactId>
-                <version>1.0.0</version>
+                <groupId>org.mockbukkit.rewrite</groupId>
+                <artifactId>openrewrite-recipes</artifactId>
+                <version>1.0.2</version>
             </dependency>
         </dependencies>
     </plugin>
@@ -58,7 +58,7 @@ plugins {
 
 dependencies {
     // Add the Mockbukkit recipes
-    rewrite("org.mockbukkit:rewrite-recipes:1.0.0") 
+    rewrite("org.mockbukkit.rewrite:openrewrite-recipes:1.0.2") 
 }
 
 // Add the recipe source to your project’s rewrite configuration
@@ -74,7 +74,7 @@ plugins {
 
 dependencies {
     // Add the Mockbukkit recipes
-    rewrite("org.mockbukkit:rewrite-recipes:1.0.0") 
+    rewrite("org.mockbukkit.rewrite:openrewrite-recipes:1.0.2") 
 }
 
 // Add the recipe source to your project’s rewrite configuration

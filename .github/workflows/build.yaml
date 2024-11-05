@@ -1,5 +1,5 @@
 ---
-name: pnpm Example Workflow
+name: Build Docs
 
 on:
   push:

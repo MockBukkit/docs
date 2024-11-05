@@ -79,7 +79,7 @@ Before you start contributing, ensure you have the following prerequisites insta
 
 - Follow the existing coding style and formatting used in the documentation repository.
 - Ensure your changes are consistent with the overall tone and voice of the documentation.
-- Make use of Vitepress's built-in features, such as frontmatter, custom components, and markdown extensions, where appropriate.
+- Make use of Vitepress's built-in features, such as frontmatter, custom components, and Markdown extensions, where appropriate.
 - Write clear and concise documentation that is easy for users to understand.
 
 ### Code blocks
@@ -103,7 +103,7 @@ specify blocks for multiple languages. Use the following syntax:
 
 ## Vitepress Markdown Extensions
 
-Vitepress provides a variety of markdown extensions that can be used to enhance the documentation.
+Vitepress provides a variety of Markdown extensions that can be used to enhance the documentation.
 You can find a list of available extensions in the [Vitepress documentation](https://vitepress.dev/guide/markdown).
 
 ## Thank You

@@ -1,6 +1,9 @@
 ---
 outline: deep
 title: Getting Started
+next:
+    text: 'Writing your first test'
+    link: '/docs/en/user_guide/introduction/first_test'
 ---
 
 # Getting Started
@@ -11,7 +14,7 @@ MockBukkit version numbering can be a little bit confusing.
 The most important thing to remember is that each version of MockBukkit is named after
 the version of Bukkit it implements, followed by the version number of MockBukkit itself.
 
-For instance: `MockBukkit-v1.21 v3.107.0` is the `3.107.0`
+For instance: `MockBukkit-v1.21 <mockbukkit-version>` is the `<mockbukkit-version>`
 release of MockBukkit, targeting plugins build for Minecraft 1.21.
 The latest stable version can always be found on
 [Maven Central](https://search.maven.org/search?q=MockBukkit).

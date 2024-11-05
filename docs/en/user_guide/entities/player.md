@@ -1,6 +1,12 @@
 ---
 outline: deep
 title: Player
+prev:
+    text: 'Entities'
+    link: '/docs/en/user_guide/entities/entity'
+next:
+    text: 'MessageTarget'
+    link: '/docs/en/user_guide/entities/message_target'
 ---
 
 # Player

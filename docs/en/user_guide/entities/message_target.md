@@ -1,6 +1,12 @@
 ---
 outline: deep
 title: MessageTarget
+next:
+    text: 'Scheduler Mock'
+    link: '/docs/en/user_guide/advanced/scheduler'
+prev:
+    text: 'Player'
+    link: '/docs/en/user_guide/entities/player'
 ---
 
 # MessageTarget

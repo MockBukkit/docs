@@ -1,6 +1,12 @@
 ---
 outline: deep
 title: Scheduler Mock
+next:
+    text: 'Events'
+    link: '/docs/en/user_guide/advanced/events'
+prev:
+    text: 'MessageTarget'
+    link: 'docs/en/user_guide/entities/message_target'
 ---
 
 # Scheduler Mock

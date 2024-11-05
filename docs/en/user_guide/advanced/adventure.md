@@ -1,6 +1,10 @@
 ---
 outline: deep
 title: Adventure
+next: false
+prev:
+    text: 'Create a Custom Server Mock'
+    link: '/docs/en/user_guide/advanced/custom_server_mock'
 ---
 
 # Adventure
@@ -23,7 +27,7 @@ The solution is to include a `platform.close()` statement in the `onDisable()` m
 
 ::: code-group
 
-```java [Java]
+```java:line-numbers [Java]
 BukkitAudiences platform;
 
 public void onEnable() {
@@ -35,7 +39,7 @@ public void onDisable() {
 }
 ```
 
-```kotlin [Kotlin]
+```kotlin:line-numbers [Kotlin]
 lateinit var platform: BukkitAudiences
 
 override fun onEnable() {

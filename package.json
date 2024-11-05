@@ -11,7 +11,10 @@
     "lint:check": "prettier --check .",
     "lint:fix": "prettier --write .",
     "lint:fix:md": "prettier --write '**/*.md'",
-    "lint:fix:yaml": "prettier --write '**/*.{yml,yaml}'"
+    "lint:fix:yaml": "prettier --write '**/*.{yml,yaml}'",
+    "lint:fix:json": "prettier --write '**/*.json'",
+    "lint:fix:js": "prettier --write '**/*.{js,jsx,mts,ts,tsx,vue}'",
+    "lint:fix:css": "prettier --write '**/*.css'"
   },
   "packageManager": "pnpm@9.12.2"
 }

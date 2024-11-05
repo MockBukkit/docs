@@ -11,8 +11,8 @@ next:
 
 # Player
 
-The `Player` class is the main class for interacting with players in MockBukkit. We provide a mock for it
-in form of the `PlayerMock`.
+The `Player` class is the main class for interacting with players in MockBukkit.
+We provide a mock for it in form of the `PlayerMock`.
 
 ## Adding a Player
 
@@ -22,8 +22,8 @@ Mockbukkit has several methods to add players to the test server.
 
 #### `ServerMock.addPlayer()`
 
-This method adds a player to the server. It returns a `PlayerMock` object which can be used to interact with the player.
-This method creates a random player.
+This method adds a player to the server. It returns a `PlayerMock` object which
+can be used to interact with the player. This method creates a random player.
 
 ::: code-group
 
@@ -56,7 +56,8 @@ val player: PlayerMock = server.addPlayer("Player1")
 #### `ServerMock.addPlayer(PlayerMock)`
 
 If you want to customize the Player object even further, you can specify
-the object you want to be added to the Server by providing a `PlayerMock` instance.
+the object you want to be added to the Server by providing a `PlayerMock`
+instance.
 
 ::: code-group
 
@@ -111,13 +112,13 @@ server.setPlayers(20)
 
 :::
 
-After this, you can easily reference these Players with the `Server.getPlayer(int)` method
-by specifying the index.
+After this, you can easily reference these Players with the
+`Server.getPlayer(int)` method by specifying the index.
 
 ## PlayerMock Methods
 
-Mockbukkit has added several methods that make unit testing players easier and nicer.
-In all examples we assume that your unit Tests starts with
+Mockbukkit has added several methods that make unit testing players easier and
+nicer. In all examples we assume that your unit Tests starts with
 
 ::: code-group
 
@@ -131,17 +132,19 @@ val player = server.addPlayer()
 
 :::
 
-As `PlayerMock` extends the `EntityMock` class, the methods referenced int [Entities](entity.md) also apply.
+As `PlayerMock` extends the `EntityMock` class, the methods referenced
+int [Entities](entity.md) also apply.
 
-This section isn't an exhaustive list of Methods we have added, please refer to the
-[Javadocs](https://javadoc.io/doc/com.github.seeseemelk/MockBukkit-v1.21) for more information.
+This section isn't an exhaustive list of Methods we have added, please refer to
+the [Javadocs](https://javadoc.io/doc/com.github.seeseemelk/MockBukkit-v1.21)
+for more information.
 
 ### Asserting the Gamemode of the player
 
 A common task is checking the Gamemode a player currently is using. We provide a
-convenience Method to make testing these a little bit easier. The `assertGameMode(Gamemode)`
-method throws and `AssertionException`,
-which will cause the test to fail if the Gamemode is different from the expected one.
+convenience Method to make testing these a little bit easier. The
+`assertGameMode(Gamemode)`method throws and `AssertionException`, which will
+cause the test to fail if the Gamemode is different from the expected one.
 
 ::: code-group
 
@@ -157,8 +160,8 @@ player.assertGameMode(GameMode.SURVIVAL)
 
 ### Simulate player disconnecting
 
-To simulate a Player disconnecting, use the `disconnect()` method. This will set the
-Player as offline but keeps it as an `OfflinePlayer`.
+To simulate a Player disconnecting, use the `disconnect()` method. This will set
+the Player as offline but keeps it as an `OfflinePlayer`.
 
 :::code-group
 
@@ -174,8 +177,9 @@ player.disconnect()
 
 ### Simulate a player reconnecting
 
-After a Player has been [disconnected](#simulate-player-disconnecting), it’s possible to simulate a reconnection.
-This will set the Player as online and restore it’s full Functionality.
+After a Player has been [disconnected](#simulate-player-disconnecting), it’s
+possible to simulate a reconnection. This will set the Player as online and
+restore it’s full Functionality.
 
 :::code-group
 

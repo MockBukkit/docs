@@ -9,9 +9,12 @@ prev:
 
 # Migrate to Mockbukkit 4 using OpenRewrite
 
-Migration to version 4 was carefully automated by the MockBukkit team using OpenRewrite scripts to facilitate the migration process. To run the scripts, follow the steps for your package manager.
+Migration to version 4 was carefully automated by the MockBukkit team using
+OpenRewrite scripts to facilitate the migration process. To run the scripts,
+follow the steps for your package manager.
 
-If you are using Maven, you can do the migration by executing the following command:
+If you are using Maven, you can do the migration by executing the following
+command:
 
 ::: code-group
 
@@ -23,11 +26,13 @@ mvn org.openrewrite.maven:rewrite-maven-plugin:run \
 
 :::
 
-Otherwise, you will need to add OpenRewrite plugin to your project with the correct configuration:
+Otherwise, you will need to add OpenRewrite plugin to your project with the
+correct configuration:
 
 ::: code-group
 
 ```xml [Maven]
+
 <plugins>
     <plugin>
         <groupId>org.openrewrite.maven</groupId>

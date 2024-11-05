@@ -11,8 +11,9 @@ prev:
 
 # Scheduler Mock
 
-MockBukkit allows the testing of timers and delays that are normally created using the Bukkit scheduler.
-This schedulers is used in the same way as a normal scheduler except that it adds several extra methods.
+MockBukkit allows the testing of timers and delays that are normally created
+using the Bukkit scheduler.This schedulers is used in the same way as a normal
+scheduler except that it adds several extra methods.
 
 ## Executing Ticks
 
@@ -32,8 +33,8 @@ server.scheduler.performOneTick()
 
 :::
 
-If more ticks need to be executed in quick succession, it’s possible to execute many ticks at once.
-The following code will perform a hundred ticks.
+If more ticks need to be executed in quick succession, it’s possible to execute
+many ticks at once. The following code will perform a hundred ticks.
 
 ::: code-group
 
@@ -49,11 +50,13 @@ server.scheduler.performTicks(100L)
 
 :::
 
-Using this method executes all ticks in order, as if they were executed on a real server.
+Using this method executes all ticks in order, as if they were executed on a
+real server.
 
 ## Getting the current tick
 
-MockBukkit has an extra method that allows to get the number of ticks since MockBukkit was last started.
+MockBukkit has an extra method that allows to get the number of ticks since
+MockBukkit was last started.
 
 ::: code-group
 

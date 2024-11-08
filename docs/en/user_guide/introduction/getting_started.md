@@ -21,7 +21,7 @@ Minecraft 1.21. The latest stable version can always be found on
 [Maven Central](https://search.maven.org/search?q=MockBukkit).
 
 :::tip
-Before MockBukkit 4.0, the artifact id follows this pattern `MockBukkit-v<minecraft-major-version>`
+Before MockBukkit 4.0, the artifact-id follows this pattern `MockBukkit-v<minecraft-major-version>`
 :::
 
 ## Installing MockBukkit

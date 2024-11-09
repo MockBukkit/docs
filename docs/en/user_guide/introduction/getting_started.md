@@ -15,10 +15,14 @@ The most important thing to remember is that each version of MockBukkit is named
 after the version of Bukkit it implements, followed by the version number of
 MockBukkit itself.
 
-For instance: `MockBukkit-v1.21 <mockbukkit-version>` is the
-`<mockbukkit-version>`release of MockBukkit, targeting plugins build for
+For instance: `mockbukkit-v1.21 <mockbukkit-version>` is the
+`<mockbukkit-version>` release of MockBukkit, targeting plugins build for
 Minecraft 1.21. The latest stable version can always be found on
 [Maven Central](https://search.maven.org/search?q=MockBukkit).
+
+:::tip
+Before MockBukkit 4.0, the artifact-ID follows this pattern `MockBukkit-v<minecraft-major-version>`
+:::
 
 ## Installing MockBukkit
 
@@ -37,7 +41,7 @@ dependency in your build tool of choice:
 <dependencies>
     <dependency>
         <groupId>org.mockbukkit.mockbukkit</groupId>
-        <artifactId>MockBukkit-v1.21</artifactId>
+        <artifactId>mockbukkit-v1.21</artifactId>
         <version>4.0.0</version>
         <scope>test</scope>
     </dependency>
@@ -46,13 +50,13 @@ dependency in your build tool of choice:
 
 ```groovy [Gradle]
 dependencies {
-    testImplementation 'org.mockbukkit.mockbukkit:MockBukkit-v1.21:4.0.0'
+    testImplementation 'org.mockbukkit.mockbukkit:mockbukkit-v1.21:4.0.0'
 }
 ```
 
 ```kotlin [Gradle Kotlin DSL]
 dependencies {
-    testImplementation("org.mockbukkit.mockbukkit:MockBukkit-v1.21:4.0.0")
+    testImplementation("org.mockbukkit.mockbukkit:mockbukkit-v1.21:4.0.0")
 }
 ```
 

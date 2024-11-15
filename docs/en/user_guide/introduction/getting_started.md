@@ -18,7 +18,7 @@ MockBukkit itself.
 For instance: `mockbukkit-v1.21 <mockbukkit-version>` is the
 `<mockbukkit-version>` release of MockBukkit, targeting plugins build for
 Minecraft 1.21. The latest stable version can always be found on
-[Maven Central](https://search.maven.org/search?q=MockBukkit).
+[Maven Central](https://search.maven.org/search?q=mockbukkit).
 
 :::tip
 Before MockBukkit 4.0, the artifact-ID follows this pattern `MockBukkit-v<minecraft-major-version>`

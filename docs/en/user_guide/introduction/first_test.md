@@ -157,7 +157,7 @@ package org.mockbukkit.docsdemo
 
 import org.bukkit.plugin.java.JavaPlugin
 
-class DemoPlugin: JavaPlugin() {
+open class DemoPlugin: JavaPlugin() {
 
     override fun onEnable() {
         logger.info("${this.name} enabled")

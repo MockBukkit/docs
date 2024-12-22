@@ -65,7 +65,7 @@ dependencies {
 ## Running MockBukkit
 
 MockBukkit is a test framework, so you will need to run your tests using a test
-runner.Mockbukkit recommends using the
+runner. MockBukkit recommends using the
 [JUnit](https://junit.org/junit5/) test runner.
 
 You can run your tests using the following command:
@@ -85,5 +85,5 @@ gradle test
 If you are using a different test runner,
 you will need to configure it to use MockBukkit.
 While other test runners like [TestNG](https://testng.org/) exist,
-Mockbukkit has not verified compatibility with them. This does not mean that
-Mockbukkit might work with them, but it is not tested.
+MockBukkit has not verified compatibility with them. This does not mean that
+MockBukkit might work with them, but it is not tested.

@@ -12,7 +12,7 @@ prev:
 ::: info
 
 This talks about the
-[Kyori Adventure](https://github.com/KyoriPowered/adventure-platform)Library.
+[Kyori Adventure](https://github.com/KyoriPowered/adventure-platform) Library.
 This has no connection to the Adventure Gamemode
 
 :::

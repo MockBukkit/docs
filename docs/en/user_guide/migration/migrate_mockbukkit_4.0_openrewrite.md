@@ -7,7 +7,7 @@ prev:
   text: "Migrate to Mockbukkit 4"
 ---
 
-# Migrate to Mockbukkit 4 using OpenRewrite
+# Migrate to MockBukkit 4 using OpenRewrite
 
 Migration to version 4 was carefully automated by the MockBukkit team using
 OpenRewrite scripts to facilitate the migration process. To run the scripts,

@@ -15,6 +15,7 @@ multiple issues that stem from providing two separate server implementations at 
 This is not possible to fix without completely rewriting MockBukkit!
 
 ## The general pattern of these issues
+
 - Something has not been initialized
 - Two service providers can not be provided simultaneously
 
@@ -28,6 +29,7 @@ paperweight {
   addServerDependencyTo = configurations.named(JavaPlugin.COMPILE_ONLY_CONFIGURATION_NAME).map { setOf(it) }
 }
 ```
+
 ::: warning
 With this, you can't use any NMS behavior during tests with MockBukkit
 :::

@@ -81,8 +81,8 @@ export default defineConfig({
             },
             {
               text: "Paperweight Compatibility",
-              link: "docs/en/user_guide/advanced/paperweight"
-            }
+              link: "docs/en/user_guide/advanced/paperweight",
+            },
           ],
         },
         {

@@ -79,6 +79,10 @@ export default defineConfig({
               text: "Adventure",
               link: "docs/en/user_guide/advanced/adventure",
             },
+            {
+              text: "Paperweight Compatibility",
+              link: "docs/en/user_guide/advanced/paperweight",
+            },
           ],
         },
         {

@@ -70,7 +70,7 @@ public class MyPluginTests {
 ```
 
 ```kotlin [Kotlin]
-class MyPluginTests {
+open class MyPluginTests {
 
     private lateinit var server: ServerMock
     private lateinit var plugin: MyPlugin

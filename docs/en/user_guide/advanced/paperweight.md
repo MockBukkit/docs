@@ -25,6 +25,11 @@ There's no perfect solution, as it's impossible to have both dependencies at tes
 exclude the paperweight provided artifact at test time now with paperweight 2.
 
 ```kts
+dependencies {
+  paperweight.paperDevBundle("your-chosen-paper-version")
+  testImplementation("your-mockbukkit-dependency")
+}
+
 paperweight {
   addServerDependencyTo = configurations.named(JavaPlugin.COMPILE_ONLY_CONFIGURATION_NAME).map { setOf(it) }
 }

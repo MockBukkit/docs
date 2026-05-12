@@ -35,6 +35,31 @@ paperweight {
 }
 ```
 
+If you are using the unofficial maven port of paperweight, [paper-nms-maven-plugin](https://github.com/Alvinn8/paper-nms-maven-plugin), you can fix the issue by excluding the `paper-nms` artifact at test time in your `pom.xml`:
+
+```xml
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>ca.bkaw</groupId>
+				<artifactId>paper-nms-maven-plugin</artifactId>
+				<version>1.4.11-SNAPSHOT</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<!-- This is the important part -->
+					<classpathDependencyExcludes>
+						<classpathDependencyExclude>ca.bkaw:paper-nms</classpathDependencyExclude>
+					</classpathDependencyExcludes>
+					<!-- Credits to https://stackoverflow.com/a/12068045 -->
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+```
+
 ::: warning
 With this, you can't use any NMS behavior during tests with MockBukkit
 :::

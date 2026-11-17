@@ -10,7 +10,7 @@ prev:
 # Compatibility with paperweight
 
 MockBukkit is not compatible with the paperweight provided artifact (also known as NMS).
-Whenever these two artifacts are simultaneously provided at test time, you will stumble uppon
+Whenever these two artifacts are simultaneously provided at test time, you will stumble upon
 multiple issues that stem from providing two separate server implementations at the same time.
 This is not possible to fix without completely rewriting MockBukkit!
 

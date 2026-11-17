@@ -1,0 +1,4 @@
+[codespell]
+skip = *pnpm-lock.yaml,*package-lock.json
+# testng: the test framework; devlop: an npm package in the lockfiles
+ignore-words-list = testng,devlop

@@ -1,11 +1,11 @@
 {
   "devDependencies": {
-    "prettier": "3.9.4",
+    "prettier": "3.10.1",
     "vitepress": "^1.6.4",
-    "vue": "^3.5.39"
+    "vue": "^3.5.45"
   },
   "engines": {
-    "pnpm": "11.9.0"
+    "pnpm": "12.21.0"
   },
   "scripts": {
     "docs:dev": "vitepress dev",
@@ -19,5 +19,5 @@
     "lint:fix:js": "prettier --write '**/*.{js,jsx,mts,ts,tsx,vue}'",
     "lint:fix:css": "prettier --write '**/*.css'"
   },
-  "packageManager": "pnpm@11.9.0"
+  "packageManager": "pnpm@12.21.0"
 }
